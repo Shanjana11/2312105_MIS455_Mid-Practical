@@ -1,10 +1,10 @@
 # Glow Skincare
 
-Glow Skincare is a simple 3-page e-commerce website for selling skincare products online. It was built with HTML, CSS and JavaScript as part of a midterm project.
+Glow Skincare is a simple 3-page e-commerce website for selling skincare products online. It was built with HTML, CSS and JavaScript as part of a midterm project of MIS455.
 
 ## Live Website
 
-glow-skin-care.netlify.app
+[glow-skin-care.netlify.app/](https://glow-skin-care.netlify.app/)
 
 ## Pages
 
