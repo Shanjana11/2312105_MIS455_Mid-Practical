@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Skincare | Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Shanjana Islam (2312105) -->
+
+    <header>
+        <h1>GLOW SKINCARE</h1>
+        <p>Gentle, natural care for healthy glowing skin</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Our Products</h2>
+        <p>Explore our best-selling skincare essentials. Every product is gentle, effective and made to fit easily into your daily routine.</p>
+        <p>Click "Add to Cart" on any item and your total updates below. Enjoy a Tk 500 discount on purchases of Tk 3000 or more.</p>
+
+        <section class="product-grid">
+            <div class="product-card">
+                <img src="images/faceWash.jpeg" alt="Face wash">
+                <h3>Face Wash</h3>
+                <p class="price">Tk 650</p>
+                <button onclick="addToCart('Face Wash', 650)">Add to Cart</button>
+        
+            </div>
+        
+            <div class="product-card">
+                <img src="images/serum.jpeg" alt="Vitamin C serum">
+                <h3>Vitamin C Serum</h3>
+                <p class="price">Tk 1450</p>
+                <button onclick="addToCart('Vitamin C Serum', 1450)">Add to Cart</button>
+            </div>
+        
+            <div class="product-card">
+                <img src="images/hydratingSerum.png" alt="Hydrating serum">
+                <h3>Hydrating Serum</h3>
+                <p class="price">Tk 1350</p>
+                <button onclick="addToCart('Hydrating Serum', 1350)">Add to Cart</button>
+            </div>
+        
+            <div class="product-card">
+                <img src="images/cream.jpeg" alt="Moisturizing cream">
+                <h3>Moisturizing Cream</h3>
+                <p class="price">Tk 950</p>
+                <button onclick="addToCart('Moisturizing Cream', 950)">Add to Cart</button>
+            </div>
+        
+            <div class="product-card">
+                <img src="images/sunscreen.jpg" alt="Sunscreen">
+                <h3>SPF 50 Sunscreen</h3>
+                <p class="price">Tk 900</p>
+                <button onclick="addToCart('SPF 50 Sunscreen', 900)">Add to Cart</button>
+            </div>
+        
+            <div class="product-card">
+                <img src="images/clayMask.webp" alt="Clay mask">
+                <h3>Clay Mask</h3>
+                <p class="price">Tk 800</p>
+                <button onclick="addToCart('Clay Mask', 800)">Add to Cart</button>
+            </div>
+        
+            <div class="product-card">
+                <img src="images/toner.jpeg" alt="Toner">
+                <h3>Toner</h3>
+                <p class="price">Tk 550</p>
+                <button onclick="addToCart('Toner', 550)">Add to Cart</button>
+            </div>
+        
+            <div class="product-card">
+                <img src="images/lipBalm.jpeg" alt="Lip balm">
+                <h3>Lip Balm</h3>
+                <p class="price">Tk 350</p>
+                <button onclick="addToCart('Lip Balm', 350)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/bodyLotion.jpg" alt="Body Lotion">
+                <h3>Body Lotion</h3>
+                <p class="price">Tk 900</p>
+                <button onclick="addToCart('Body Lotion', 900)">Add to Cart</button>
+            </div>
+        
+            <div class="product-card">
+                <img src="images/micellarWater.avif" alt="Micellar Water">
+                <h3>Micellar Water</h3>
+                <p class="price">Tk 800</p>
+                <button onclick="addToCart('Micellar Water', 800)">Add to Cart</button>
+            </div>
+        
+            <div class="product-card">
+                <img src="images/patch.webp" alt="Acne Patch">
+                <h3>Acne Patch</h3>
+                <p class="price">Tk 550</p>
+                <button onclick="addToCart('Acne Patch', 550)">Add to Cart</button>
+            </div>
+        
+            <div class="product-card">
+                <img src="images/SheetMask.png" alt="Sheet Mask">
+                <h3>Sheet Mask</h3>
+                <p class="price">Tk 350</p>
+                <button onclick="addToCart('Sheet Mask', 350)">Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="cart-box">
+            <h2>Your Shopping Cart</h2>
+            <p>Add your favorite products to the cart and check your total price. Get a Tk 500 discount on purchases of Tk 3000 or more.</p>
+            <p id="cart-items">Cart Items: 0</p>
+        
+            <div class="cart-buttons">
+                <button onclick="clearCart()">Clear Cart</button>
+            </div>
+        
+            <div id="cart-details" class="cart-details"><p>Your cart is empty.</p></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Glow Skincare. All rights reserved.</p>
+        <p>Email: hello@glowskincare.com | Phone: +880 1234 567890</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -25,6 +25,7 @@ nav ul {
     flex-wrap: wrap;
     background: #8aa38b;
 }
+
 nav li a {
     display: block;
     padding: 14px 28px;
@@ -33,6 +34,7 @@ nav li a {
     font-weight: 600;
     transition: background 0.3s, color 0.3s;
 }
+
 nav li a:hover { background: #5f7a60; color: #fff; }
 nav li a.active { background: #5f7a60; }
 
@@ -50,6 +52,7 @@ img { max-width: 100%; border-radius: 14px; display: block; }
     flex-wrap: wrap;
     margin-bottom: 40px;
 }
+
 .container > div { flex: 1 1 320px; }
 
 /* Home page FLEX features */
@@ -60,6 +63,7 @@ img { max-width: 100%; border-radius: 14px; display: block; }
     justify-content: space-between;
     margin: 30px 0;
 }
+
 .feature-card {
     flex: 1 1 250px;
     background: #fff;
@@ -68,7 +72,27 @@ img { max-width: 100%; border-radius: 14px; display: block; }
     box-shadow: 0 3px 12px rgba(120, 80, 80, 0.12);
     transition: transform 0.3s;
 }
+
 .feature-card:hover { transform: translateY(-6px); }
+
+/* Product page GRID */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin: 24px 0;
+}
+.product-card {
+    background: #fff;
+    padding: 16px;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(120, 80, 80, 0.12);
+    text-align: center;
+}
+
+.product-card img { margin-bottom: 12px; height: 180px; width: 100%; object-fit: cover; }
+.price { font-weight: bold; color: #c9757a; font-size: 1.1rem; }
+
 
 /* Buttons */
 button {
@@ -88,6 +112,41 @@ button:hover { background: #8aa38b; transform: scale(1.05); }
     font-weight: 600;
     color: #5f7a60;
 }
+
+/* Shopping cart */
+.cart-box {
+    background: #f1e6f5;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#cart-items { 
+    font-weight: bold; 
+    color: #c9757a; 
+    font-size: 1.2rem; 
+}
+
+.cart-buttons { 
+    display: flex; 
+    justify-content: center; 
+    gap: 14px; 
+    flex-wrap: wrap; 
+}
+
+.cart-details {
+    background: #fff;
+    max-width: 600px;
+    margin: 24px auto 0;
+    padding: 20px 24px;
+    border-radius: 14px;
+    text-align: left;
+}
+
+.cart-details h3 { color: #c9757a; margin-bottom: 8px; }
+.cart-details hr { margin: 12px 0; border: none; border-top: 1px solid #ccc; }
+
 
 /* Footer */
 footer {
