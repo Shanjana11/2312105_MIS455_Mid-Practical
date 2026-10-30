@@ -1,0 +1,99 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #4a3b3b;
+    background: #fff8f6;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #f4d6d2;
+    color: #5b3a3a;
+    text-align: center;
+    padding: 24px 16px 14px;
+}
+header h1 { font-size: 2.1rem; letter-spacing: 3px; font-weight: 300; }
+header p { color: #7a5a5a; font-size: 0.95rem; }
+
+/* Navigation bar with hover effect */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #8aa38b;
+}
+nav li a {
+    display: block;
+    padding: 14px 28px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+}
+nav li a:hover { background: #5f7a60; color: #fff; }
+nav li a.active { background: #5f7a60; }
+
+/* Layout */
+main { max-width: 1100px; margin: 30px auto; padding: 0 16px; }
+h2 { color: #5f7a60; margin-bottom: 12px; }
+p { margin-bottom: 14px; }
+img { max-width: 100%; border-radius: 14px; display: block; }
+
+/* Container (flex) */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.container > div { flex: 1 1 320px; }
+
+/* Home page FLEX features */
+.features {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.feature-card {
+    flex: 1 1 250px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(120, 80, 80, 0.12);
+    transition: transform 0.3s;
+}
+.feature-card:hover { transform: translateY(-6px); }
+
+/* Buttons */
+button {
+    background: #c9757a;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+button:hover { background: #8aa38b; transform: scale(1.05); }
+
+#tip-text, #cart-count, #form-message {
+    margin-top: 12px;
+    font-weight: 600;
+    color: #5f7a60;
+}
+
+/* Footer */
+footer {
+    background: #f4d6d2;
+    color: #5b3a3a;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
