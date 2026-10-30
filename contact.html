@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Skincare | Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Shanjana Islam (2312105) -->
+
+    <header>
+        <h1>GLOW SKINCARE</h1>
+        <p>Gentle, natural care for healthy glowing skin</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Contact Us</h2>
+        <p>Not sure which product suits your skin type? Send us a message and our skincare experts will reply within one business day.</p>
+        <p>You can also visit our store or call us during opening hours, 10 AM to 8 PM every day.</p>
+
+    <section class="contact-wrap">
+        <div>
+            <img src="images/location.jpg" height="450 px" width="450 px" alt="Store location">
+            <p style="margin-top:12px;">
+                <b>Address: </b> 123, Glow Avenue, Dhaka, Bangladesh<br>
+                <b>Phone: </b> +880 1234 567890<br>
+                <b>Email: </b> hello@glowskincare.com <br>
+                <b>Opening Hours: </b> 10 AM - 8 PM (EveryDay) <br>
+                Thank you for choosing Glow Skin Care. Your glow starts here.
+            </p>
+        </div>
+
+        <form onsubmit="return false;">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Write your message"></textarea><br><br>
+            
+            <button type="button" onclick="sendMessage()">Send Message</button>
+            <p id="form-message"></p>
+        </form>
+    </section>
+
+    <section style="margin-top:30px;">
+        <img src="images/Image1or2.webp" alt="About Glow" style="max-width:400px;">
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Glow Skincare. All rights reserved.</p>
+        <p>Email: hello@glowskincare.com | Phone: +880 1234 567890</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
