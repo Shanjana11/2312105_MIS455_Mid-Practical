@@ -14,6 +14,7 @@ header {
     text-align: center;
     padding: 24px 16px 14px;
 }
+
 header h1 { font-size: 2.1rem; letter-spacing: 3px; font-weight: 300; }
 header p { color: #7a5a5a; font-size: 0.95rem; }
 
@@ -144,9 +145,40 @@ button:hover { background: #8aa38b; transform: scale(1.05); }
     text-align: left;
 }
 
-.cart-details h3 { color: #c9757a; margin-bottom: 8px; }
-.cart-details hr { margin: 12px 0; border: none; border-top: 1px solid #ccc; }
+.cart-details h3 { 
+    color: #c9757a; 
+    margin-bottom: 8px; 
+}
+.cart-details hr { 
+    margin: 12px 0; 
+    border: none; 
+    border-top: 1px solid #ccc; 
+}
 
+/* Contact form */
+.contact-wrap { 
+    display: flex; 
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+.contact-wrap > * { 
+    flex: 1 1 320px; 
+}
+
+form label { 
+    display: block; 
+    margin: 10px 0 4px; 
+    font-weight: 600; 
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e3c7c4;
+    border-radius: 8px;
+    font-family: inherit;
+}
 
 /* Footer */
 footer {
